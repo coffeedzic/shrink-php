@@ -17,9 +17,5 @@ Simple PHP URL Shortener App
 
 * [Simple Alert](https://github.com/coffeedzic/simple-alert)
 
-## License
-
-Shorty is licensed under the [MIT](https://github.com/coffeedzic/shrink-php/blob/main/LICENSE) license.
-
 
 
