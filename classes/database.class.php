@@ -16,9 +16,9 @@
          */
 
         private $database_host = 'localhost';
-        private $database_user = 'username';
-        private $database_password = 'password';
-        private $database_name = 'shrink';
+        private $database_user = '';
+        private $database_password = '';
+        private $database_name = '';
         private $port = '';
 
         /**

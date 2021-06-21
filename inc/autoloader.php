@@ -1,8 +1,22 @@
 <?php
 
-    define('SITE_ROOT', $_SERVER["DOCUMENT_ROOT"]);
+    /**
+     * Shrink PHP
+     * autoloader.php - Class autoloader
+     * 
+     * @author    Edin Kahvedžić <edin@coffeedzic.com>
+     * @version   1.0.0
+     */
+
+    // Loading our register
 
     spl_autoload_register('myAutoloader');
+
+    /**
+     * Function for loading all files in class folder with extension .class.php 
+     * 
+     * @return string
+     */
 
     function myAutoloader($class_name) {
         $url = $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];

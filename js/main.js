@@ -1,4 +1,24 @@
+/**
+ * Shrink PHP
+ * main.js - Main JavaScript file
+ *
+ * @author    Edin Kahvedžić <edin@coffeedzic.com>
+ * @version 1.0.0
+ * @license
+ *   
+ */
+
 $(document).ready(function() {
+
+    /**
+     * Function for shortening our url, updating database, and getting code
+     * 
+     * @param {String} url
+     * 
+     * @return {String} JSON
+     * 
+     */
+
     $(document).on('click', '.shrink-btn', function() {
         let url = $('#url').val()
         $.ajax({
@@ -13,7 +33,7 @@ $(document).ready(function() {
                 if(data.code) {
                     let html = `
                         <p>Your link:</p>
-                        <p><a class="copy-link" href="https://apps.coffeedzic.com/shrink-php/${data.code}">https://apps.coffeedzic.com/shrink-php/${data.code}</a></p> 
+                        <p><a class="copy-link" href="${window.location.href}${data.code}">${window.location.href}${data.code}</a></p> 
                     `
                     $('.response').html(html);
                 } else if(data.error) {
@@ -22,6 +42,15 @@ $(document).ready(function() {
             }
         });
     });
+
+    /**
+     * Function for cheking # of redirects by our shortened link
+     * 
+     * @param {String} url
+     * 
+     * @return {String} JSON
+     * 
+     */
 
     $(document).on('click', '.insight-btn', function() {
         let url = $('#url').val()
@@ -46,6 +75,13 @@ $(document).ready(function() {
             }
         });
     });
+
+    /**
+     * Function that copy our generated URL to clipboard
+     * 
+     * @return {String}
+     * 
+     */
 
     $(document).on('click', '.copy-btn', function() {
         let link = $('.copy-link').attr('href');

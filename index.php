@@ -1,4 +1,12 @@
 <?php
+    /**
+     * Shrink PHP
+     * index.php - Index page
+     *
+     * @author    Edin Kahvedžić <edin@coffeedzic.com>
+     * @version   1.0.0
+     */
+
     require_once('inc/redirect.inc.php');
 ?>
 <!DOCTYPE html>
