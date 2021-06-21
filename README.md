@@ -7,6 +7,10 @@ Simple PHP URL Shortener App
 
 [apps.coffeedzic.com/shrink-php](https://apps.coffeedzic.com/shrink-php)
 
-## Test it locally
+## Installation
+
+1. Download and extract files to your directory
+2. Use the included .sql file
+3. Set up database in 'classes/database.class.php'
 
 
