@@ -19,5 +19,7 @@ Simple PHP URL Shortener App
 
 ## License
 
+Shorty is licensed under the [MIT](https://github.com/coffeedzic/shrink-php/blob/main/LICENSE) license.
+
 
 
