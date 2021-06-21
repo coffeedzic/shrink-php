@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --color: #38464e;
+    --border: #c7cbce;
+    --input: #9da6ab;
+    --box-bg: #fbfbfb;
+    --anchor: #faaca8;
+}
+
+body {
+    background: #ddd6f3;
+    background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);
+    background: linear-gradient(to right, #faaca8, #ddd6f3);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.box {
+    width: 40%;
+    background-color: var(--box-bg);
+    color: var(--color);
+    margin-top: 64px;
+    padding: 24px;
+    border-radius: 6px;
+}
+
+.box .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.box .header h1 {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 2px;    
+}
+
+.box .header p {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.box .shrink-php {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.box .shrink-php input {
+    width: 100%;
+    font: inherit;
+    letter-spacing: 2px;
+    color: var(--input);
+    border: 1px solid var(--border);
+    padding: 8px;
+}
+
+.box .shrink-php input:focus {
+    outline: none;
+}
+
+.box .shrink-php input::placeholder {
+    color: var(--input);
+}
+
+.box .shrink-php .buttons {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box .shrink-php .buttons button {
+    background: transparent;
+    letter-spacing: 2px;
+    color: var(--input);
+    border: 1px solid var(--border);
+    padding: 11.5px;
+    cursor: pointer;
+}
+
+.box .shrink-php .buttons button:hover {
+    color: var(--color);
+}
+
+.box .shrink-php .buttons .shrink-btn {
+    width: 75%;
+}
+
+.box .shrink-php .buttons .insight-btn {
+    width: 100%;
+}
+
+.box .shrink-php .buttons .copy-btn {
+    width: 20%;
+    cursor: pointer;
+}
+
+.box .response {
+    padding: 16px 0;
+    letter-spacing: 2px;
+}
+
+.box .response p {
+    word-break: break-all;
+    font-size: 13px;
+}
+
+.box .response a {
+    color: var(--anchor);
+    text-decoration: none;
+    letter-spacing: .5px;
+}
+
+.nav-link {
+    font-size: 10px;
+    margin-top: 8px;
+    color: var(--box-bg);
+}
+
+footer {
+    color: var(--box-bg);
+    margin-top: 32px;
+}
+
+footer a {
+    color: var(--box-bg);
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer .icons {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .icons a {
+    padding: 8px;
+}
+
+footer p {
+    margin-top: 4px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 992px) {
+    body {
+        background-size: 400%;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .wrapper .box {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    footer {
+        margin-top: 16px;
+    }
+}
