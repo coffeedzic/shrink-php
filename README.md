@@ -13,4 +13,11 @@ Simple PHP URL Shortener App
 2. Use the included .sql file
 3. Set up database in 'classes/database.class.php'
 
+## Requirements
+
+* [Simple Alert](https://github.com/coffeedzic/simple-alert)
+
+## License
+
+
 
