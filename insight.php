@@ -17,10 +17,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">    
         <title>Shrink PHP - Simple PHP Web App</title>    
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://apps.coffeedzic.com/simple-alert/css/simple-alert.min.css">
+        <link rel="stylesheet" href="https://apps.coffeedzic.com/simple-alert/dist/css/simple-alert.min.css">
         <script src="https://kit.fontawesome.com/bccf934f7c.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://apps.coffeedzic.com/simple-alert/js/simple-alert-0.0.1.min.js"></script>
+        <script src="https://apps.coffeedzic.com/simple-alert/dist/js/simple-alert.min.js"></script>
     </head>
     <body>
         <div class="wrapper">
